@@ -30,7 +30,7 @@ var novelInfo = [
 
 //BGMの変数
 var bgm;
-var bgmSwitch = 1;　//BGMを再生タイミングに使用する
+var bgmSwitch = 0;　//BGMを再生タイミングに使用する
 
 //小説の文節を格納する配列
 var phrase;
@@ -660,6 +660,7 @@ function draw() {
 
 
                         //大きい文字エフェクトを入れるかどうか
+                        /*
                         if (expandTextRandom[i] > 0.8 && covBox[i] !== 1) {
                             textFont(myFont, fontSize[i] * 4);
                             tHeight = textAscent() + textDescent();
@@ -671,6 +672,7 @@ function draw() {
                         } else {
                             fill(150, opacity[i]);
                         }
+                        */
                         
 
                         textFont(myFont, fontSize[i]);
@@ -679,6 +681,7 @@ function draw() {
                         textLeading(fontSize[i]);
 
                         //コメントボックスを表示するコード
+                        /*
                          if (covBox[i] === 1) {
 
                             //phraseX[i] = Width / 2 - (tWidth * phrase[i].length) / 2;
@@ -695,6 +698,7 @@ function draw() {
                             fill(150, opacity[i]);
                             //textAlign(CENTER, CENTER);
                         }
+                        */
 
 
                         //テキストを表示するコード
@@ -720,6 +724,7 @@ function draw() {
 
                         
                         //コメントボックスを表示するコード
+                        /*
                         if (covBox[i] === 1) {
                             //phraseX[i] = Width / 2 - tWidth / 2;
                             //phraseY[i] = Height / 2 - (tWidth * realLetterLengthForVertical[i]) / 2;
@@ -735,10 +740,12 @@ function draw() {
                             fill(150, opacity[i]);
                             //textAlign(CENTER, CENTER);
                         }
+                        */
                         
 
 
                         //大きな文字を表示する際のコード
+                        /*
                         if (expandTextRandom[i] > 0.8 && covBox[i] !== 1) {
                             textFont(myFont, fontSize[i] * 4);
                             tHeight = textAscent() + textDescent();
@@ -798,6 +805,7 @@ function draw() {
                         } else {
                             fill(150, opacity[i])
                         }
+                        */
 
                         //文節を表示するためのコード
                         textFont(myFont, fontSize[i]);
